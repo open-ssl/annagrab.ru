@@ -1,0 +1,56 @@
+.btn-whatsapp {
+    background-color: #4fce5d!important;
+    border-color: #4fce5d!important;
+    color: #fff;
+}
+
+.btn-vk {
+    background-color: #5082b4!important;
+    border-color: #5082b4!important;
+    color: #fff;
+}
+
+.btn-instagram {
+    background-color: #fb3958!important;
+    border-color: #fb3958!important;
+    color: #fff;
+}
+
+.btn-viber {
+    background-color: #7d5199!important;
+    border-color: #7d5199!important;
+    color: #fff;
+}
+
+.btn-tg {
+    background-color: #1e97cb!important;
+    border-color: #1e97cb!important;
+    color: #fff;
+}
+
+.btn-social:active, .btn-social:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Copyright to https://pixabay.com/photos/beach-wave-costa-sand-carboneras-4242994/ */
+.bg-sea-side:before {
+    background-color: black;
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(../img/sea-side.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+  }
+  
+  .bg-transparent {
+    background-color: rgba(248, 249, 250, .85)!important;
+  }
