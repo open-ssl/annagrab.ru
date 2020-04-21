@@ -33,8 +33,8 @@
     font-weight: bold;
 }
 
-/* Copyright to https://pixabay.com/photos/beach-wave-costa-sand-carboneras-4242994/ */
-.bg-sea-side:before {
+/* Copyright to https://www.canva.com/photos/MADGv2rMmho-person-standing-in-front-of-white-buildings/ */
+.bg-business:before {
     background-color: black;
     content: "";
     display: block;
@@ -44,7 +44,7 @@
     width: 100%;
     height: 100%;
     z-index: -10;
-    background: url(../img/sea-side.jpg) no-repeat center center;
+    background: url(../img/bg-business.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
