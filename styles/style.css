@@ -39,6 +39,10 @@
     color: #fff;
 }
 
+.btn-youtube:hover, .btn-youtube:active, .btn-youtube:focus {
+    color: #eee;
+}
+
 /* Copyright to https://www.canva.com/photos/MADGv2rMmho-person-standing-in-front-of-white-buildings/ */
 .bg-business:before {
     background-color: black;
