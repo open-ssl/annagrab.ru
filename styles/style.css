@@ -53,6 +53,16 @@
     color: #eee;
 }
 
+.btn-events4friends {
+    background-color: rgb(74, 163, 82) !important;
+    border-color: rgb(74, 163, 82)!important;
+    color: #fff;
+}
+
+.btn-events4friends:hover, .btn-events4friends:active, .btn-events4friends:focus {
+    color: #eee;
+}
+
 /* Copyright to https://www.canva.com/photos/MADGv2rMmho-person-standing-in-front-of-white-buildings/ */
 .bg-business:before {
     background-color: black;
