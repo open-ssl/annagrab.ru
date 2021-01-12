@@ -84,3 +84,13 @@
   .bg-transparent {
     background-color: rgba(248, 249, 250, .95)!important;
   }
+
+.btn-transformation {
+  background-color: #ec3642!important;
+  border-color: #dc3545!important;
+  color: #fff;
+}
+
+.btn-transformation:hover, .btn-transformation:active, .btn-transformation:focus  {
+  color: #eee;
+}
