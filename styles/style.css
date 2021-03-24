@@ -63,27 +63,9 @@
     color: #eee;
 }
 
-/* Copyright to https://www.canva.com/photos/MADGv2rMmho-person-standing-in-front-of-white-buildings/ */
-.bg-business:before {
-    background-color: black;
-    content: "";
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-    background: url(../img/bg-business.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;  
-  }
-  
-  .bg-transparent {
-    background-color: rgba(248, 249, 250, .95)!important;
-  }
+.bg-transparent {
+  background-color: rgba(248, 249, 250, .95)!important;
+}
 
 .btn-transformation {
   background-color: #ec3642!important;
