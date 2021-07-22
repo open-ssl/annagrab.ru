@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Хочу в команду</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/fontawesome.min.css" />
+  <link rel="stylesheet" href="/styles/style.css" />
+</head>
+
+<body class="container container-center">
+  <div class="d-flex justify-content-center">
+    <img class="img-fluid rounded" src="/img/avatar.jpg" alt="Анна Граб"/>
+  </div>
+
+  <section class="container-fluid">
+    <div class="container">
+      <h1 class="text-center">Ваша анкета</h1>
+      <p>Укажите данные и мессенджер для связи. Нажмите кнопку «Отправить»</p>
+      <div class="form-group">
+        <label for="txt-name">Имя</label>
+        <input type="text" class="form-control" id="txt-name" placeholder="Ваше имя">
+      </div>
+      <div class="form-group">
+        <label for="txt-phone">Телефон</label>
+        <input type="tel" class="form-control" id="txt-phone" placeholder="8(921)100-00-00">
+      </div>
+      <!--Checkbox-->
+      <div class="form-check form-group">
+        <label class="form-check-label" for="check-wa">
+          <input class="form-check-input" type="checkbox" value="Whatsapp" id="check-wa">
+          Whatsapp
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="form-check form-group">
+        <label class="form-check-label" for="check-vb">
+          <input class="form-check-input" type="checkbox" value="Viber" id="check-vb">
+          Viber
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="form-check form-group">
+        <label class="form-check-label" for="check-tg">
+          <input class="form-check-input" type="checkbox" value="Telegram" id="check-tg">
+          Telegram
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="form-group text-center">
+        <a id="btn-send-form" class="btn form-btn btn-light text-danger border-danger" >
+          <span id="btn-send-form-text">Отправить</span>
+          <object class="form-loader" type="image/svg+xml" data="image/spinner.svg"></object>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center mt-5 mb-3">
+    <!-- Yandex.Metrika informer -->
+    <a href="https://metrika.yandex.ru/stat/?id=53955745&amp;from=informer"
+       target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/53955745/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+                                           style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="53955745" data-lang="ru" /></a>
+    <!-- /Yandex.Metrika informer -->
+  </div>
+  <div>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(53955745, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+      });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/53955745" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CRMS22W0P5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-CRMS22W0P5');
+    </script>
+</body>
+</html>
