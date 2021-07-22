@@ -48,10 +48,105 @@
     <div class="form-group text-center pt-4">
       <a id="btn-send-form" class="btn form-btn btn-light text-danger border-danger" >
         <span id="btn-send-form-text">Отправить</span>
-        <object class="form-loader" type="image/svg+xml" data="image/spinner.svg"></object>
+        <object class="form-loader" type="image/svg+xml" data="/img/spinner.svg"></object>
       </a>
     </div>
   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- https://github.com/RobinHerbots/Inputmask -->
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
+
+  <script>
+    //
+    // NOTE!
+    // Код специально написан в стиле ES5.
+    // Не пугайтесь, он прекрасно работает.
+    //
+    jQuery(document).ready(function() {
+      $("#txt-phone").inputmask({
+        "mask": "8(999)999-99-99"
+      });
+      $("#btn-send-form").click(function() {
+        //
+        // NOTE!
+        // Собираем данные формы в JSON
+        //
+        var name = $("#txt-name")[0].value;
+        if (name.length < 2) {
+          alert('Укажите Ваше имя');
+          $("#txt-name")[0].focus();
+          return;
+        }
+        var phone = $("#txt-phone")[0].value.replace(/^8/, 7).replace(/-/g, '').replace(/[()]/g, '');
+        if (phone.length < 8) {
+          alert('Укажите укажите номер телефона в формате 7xxxXXXxxXX');
+          $("#txt-phone")[0].focus();
+          return;
+        }
+        var wa = $("#check-wa")[0].checked;
+        var vb = $("#check-vb")[0].checked;
+        var tg = $("#check-tg")[0].checked;
+
+        var formData = {
+          name: name,
+          phone: phone,
+          whatsapp: wa,
+          viber: vb,
+          telegram: tg,
+        }
+
+        console.log('Отправляю данные в Телеграм-бот https://t.me/annagrabbot:', JSON.stringify(formData));
+
+        //
+        // NOTE!
+        // Делаем кнопку "Отправить" недоступной для пользователя
+        //
+        $('#btn-send-form-text').hide();
+        $('#btn-send-form').addClass('disabled');
+
+        //
+        // NOTE!
+        // Собираем данные формы в JSON
+        //
+        $.ajax({
+          url: 'https://annagrabbot.herokuapp.com/sendform',
+          type: 'POST',
+          data: formData,
+          beforeSend: function() {
+            $('.form-loader').show();
+          },
+          success: function(data) {
+            //
+            // NOTE!
+            // Делаем кнопку "Отправить" доступной для пользователя
+            //
+            console.log('Данные отправлены');
+
+            $('.form-loader').hide();
+            $('#btn-send-form-text').show();
+            $('#btn-send-form').removeClass('disabled');
+
+            alert('Заявка отправлена! Пожалуйста, ожидайте. Я скоро с Вами свяжусь.');
+          },
+          error: function(error) {
+            //
+            // NOTE!
+            // Делаем кнопку "Отправить" доступной для пользователя
+            //
+            console.log('Ошибка! Данные не отправлены :(');
+
+            $('.form-loader').hide();
+            $('#btn-send-form-text').show();
+            $('#btn-send-form').removeClass('disabled');
+
+            alert('Ошибка! Заявка не отправлена. Попробуйте еще раз.');
+          }
+        });
+      });
+    });
+  </script>
 
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript" >
