@@ -1,78 +1,170 @@
 .btn-whatsapp {
-    background-color: #4fce5d!important;
-    border-color: #4fce5d!important;
-    color: #fff;
-}
-
-.btn-vk {
-    background-color: #5082b4!important;
-    border-color: #5082b4!important;
-    color: #fff;
-}
-
-.btn-instagram {
-    background-color: #fb3958!important;
-    border-color: #fb3958!important;
-    color: #fff;
-}
-
-.btn-viber {
-    background-color: #7d5199!important;
-    border-color: #7d5199!important;
-    color: #fff;
-}
-
-.btn-tg {
-    background-color: #1e97cb!important;
-    border-color: #1e97cb!important;
-    color: #fff;
-}
-
-.btn-social {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn-social:active, .btn-social:hover {
-    color: #fff;
-    font-weight: bold;
-}
-
-.btn-youtube {
-    background-color: #c4302b!important;
-    border-color: #c4302b!important;
-    color: #fff;
-}
-
-.btn-youtube:hover, .btn-youtube:active, .btn-youtube:focus {
-    color: #eee;
-}
-
-.btn-events4friends {
-    background-color: rgb(74, 163, 82) !important;
-    border-color: rgb(74, 163, 82)!important;
-    color: #fff;
-}
-
-.btn-events4friends:hover, .btn-events4friends:active, .btn-events4friends:focus {
-    color: #eee;
-}
-
-.bg-transparent {
-  background-color: rgba(248, 249, 250, .95)!important;
-}
-
-.btn-transformation {
-  background-color: #ec3642!important;
-  border-color: #dc3545!important;
+  background-color: #4fce5d !important;
+  border-color: #4fce5d !important;
   color: #fff;
 }
 
-.btn-transformation:hover, .btn-transformation:active, .btn-transformation:focus  {
+.btn-vk {
+  background-color: #5082b4 !important;
+  border-color: #5082b4 !important;
+  color: #fff;
+}
+
+.btn-instagram {
+  background-color: #fb3958 !important;
+  border-color: #fb3958 !important;
+  color: #fff;
+}
+
+.btn-viber {
+  background-color: #7d5199 !important;
+  border-color: #7d5199 !important;
+  color: #fff;
+}
+
+.btn-tg {
+  background-color: #1e97cb !important;
+  border-color: #1e97cb !important;
+  color: #fff;
+}
+
+.btn-social {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-social:active,
+.btn-social:hover {
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-youtube {
+  background-color: #c4302b !important;
+  border-color: #c4302b !important;
+  color: #fff;
+}
+
+.btn-youtube:hover,
+.btn-youtube:active,
+.btn-youtube:focus {
   color: #eee;
+}
+
+.btn-events4friends {
+  background-color: rgb(74, 163, 82) !important;
+  border-color: rgb(74, 163, 82) !important;
+  color: #fff;
+}
+
+.btn-events4friends:hover,
+.btn-events4friends:active,
+.btn-events4friends:focus {
+  color: #eee;
+}
+
+.bg-transparent {
+  background-color: rgba(248, 249, 250, 0.95) !important;
+}
+
+.btn-transformation {
+  background-color: #ec3642 !important;
+  border-color: #dc3545 !important;
+  color: #fff;
+}
+
+.btn-transformation:hover,
+.btn-transformation:active,
+.btn-transformation:focus {
+  color: #eee;
+}
+
+@media (min-width: 992px) {
+  .about__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.about__video-container {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 992px) {
+  .about__video-container {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+
+.about__text-container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgb(222, 222, 222);
+  box-shadow: -14px 14px 0em 0px transparent;
+}
+
+@media (min-width: 992px) {
+  .about__text-container {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+.about__video-container img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about__avatar {
+  display: block;
+  width: 90px;
+  height: 90px;
+}
+
+.about__title {
+  font-size: 21px;
+  font-weight: 800;
+}
+
+@media (min-width: 992px) {
+  .about__title {
+    width: min-content;
+    padding-left: 14px;
+    border-width: 0px 0px 0px 5px;
+    border-style: none none none solid;
+    border-color: transparent transparent transparent #e99a92;
+  }
+
+  .about__title span {
+    display: none;
+  }
+}
+
+.about__button {
+  display: none;
+  padding: 14px 28px;
+  background-color: #e99a92;
+  box-shadow: 0em 0.15em 0.65em 0em transparent;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about__button:hover {
+  transform: translateY(-1px);
+  background-color: rgb(255, 148, 138);
+  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.25);
 }
