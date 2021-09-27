@@ -491,3 +491,7 @@
   color: #747a61;
   border-color: #747a61;
 }
+
+.form-loader {
+  height: 12px;
+}
