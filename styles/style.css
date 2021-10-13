@@ -394,6 +394,10 @@
   }
 }
 
+.slider__quote-author a {
+  color: inherit;
+}
+
 .slider__tabs {
   z-index: 3;
   position: absolute;
