@@ -351,12 +351,12 @@
 
 .slider__button--prev {
   background-image: url("../img/left-arrow.svg");
-  left: -10px;
+  left: 0;
 }
 
 .slider__button--next {
   background-image: url("../img/right-arrow.svg");
-  right: -10px;
+  right: 0;
 }
 
 @media (min-width: 992px) {
