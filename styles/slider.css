@@ -111,7 +111,7 @@
     color: var(--white);
 }
 
-.slider__quote-author {
+.slider__quote-website {
     font-style: normal;
     font-weight: bold;
     text-align: center;
@@ -125,12 +125,12 @@
         font-size: 22px;
     }
 
-    .slider__quote-author {
+    .slider__quote-website {
         font-size: 24px;
     }
 }
 
-.slider__quote-author a {
+.slider__quote-website a {
     color: inherit;
 }
 
