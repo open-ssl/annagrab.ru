@@ -221,6 +221,13 @@
   color: #e25eee;
 }
 
+.about__social-item i:hover,
+.about__social-item i:focus,
+.about__social-item a:hover,
+.about__social-item a:focus {
+  color: #747a61;
+}
+
 .icon__vk {
   color: #007bff;
 }
